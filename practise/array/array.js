@@ -38,3 +38,9 @@ console.log(array);  // Output: [2, 4, 6, 8, 10]
 const numberss = [1, 2, 3, 4, 5];
 const evenNumbers = numberss.filter((num) => num % 2 === 0);
 // Result: evenNumbers = [2, 4]
+console.log(evenNumbers);
+
+
+const num=[1,2,4,5,6,7]
+const odd=num.filter((num)=>num%2===1)
+console.log(odd);
