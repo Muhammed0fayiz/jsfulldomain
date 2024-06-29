@@ -6,6 +6,6 @@
     // You can do some operations here
     console.log(myVar); // Outputs: 20
   })();
-  
+                                                                                                                                                                                                                                                                                                                                                                                                                       
   // Outside the IIFE, myVar is not accessible
   console.log(myVar); // Throws an error because myVar is not defined in this scope
