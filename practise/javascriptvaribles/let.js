@@ -20,6 +20,6 @@ function example() {
         console.log(x); // 1 (accessible because 'x' is in the outer block)
     }
     console.log(x); // 1
-    console.log(y); // Error: y is not defined (block-scoped)
+ 
 }
 example();
