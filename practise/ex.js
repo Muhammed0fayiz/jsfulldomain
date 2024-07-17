@@ -1,11 +1,9 @@
-// You define an IIFE (a function wrapped in parentheses)
-(function () {
-    // Inside the IIFE, you can have your own variables without affecting the global scope
-    var myVar = 20;
-  
-    // You can do some operations here
-    console.log(myVar); // Outputs: 20
-  })();
-                                                                                                                                                                                                                                                                                                                                                                                                                       
-  // Outside the IIFE, myVar is not accessible
-  console.log(myVar); // Throws an error because myVar is not defined in this scope
+let a='my name is fayiz'
+let b=a.split(' ')
+let lens=b[0]
+for(let i=0;i<b.length;i++){
+if(b[i].length>lens.length)
+  lens=b[i]
+}
+
+ console.log(lens);
