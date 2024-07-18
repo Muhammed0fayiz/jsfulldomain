@@ -1,18 +1,12 @@
-// let a=10
-// console.log(this);
-
-function as(){
-    let a=23
-    console.log(a);
-   
+function fact(name, age) {
+    return {
+        name: name,
+        age: age,
+        greet: function() {
+            console.log(`hello ${this.name}`);
+        }
+    };
 }
-as()
-// console.log(a);
-// const person = {
-//     name: 'John',
-//     sayName: function () {
-//       console.log(this.name); // Refers to the 'person' object
-//     },
-//   };
-  
-//   person.sayName(); // Outputs 'John'
+
+let a = fact('ss', 2);
+a.greet(); // Output: hello ss
