@@ -23,7 +23,7 @@ function createPromise(success) {
       messages.forEach(message => console.log(message));
     })
     .catch((error) => {
-      console.log('One of the promises rejected:');
+      console.log('One of the promises rejected:');+
       console.log(error);
     });
   

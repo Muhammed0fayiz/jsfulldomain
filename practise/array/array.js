@@ -44,17 +44,27 @@
 // const num=[1,2,4,5,6,7]
 // const odd=num.filter((num)=>num%2===1)
 // console.log(odd);
+function check(arr) {
+    let isAscending = true;
+    let isDescending = true;
 
-            max_area = 0
-            left = 0
-            right = len(height) - 1
-    
-            while left < right:
-                max_area = max(max_area, (right - left) * min(height[left], height[right]))
-    
-                if height[left] < height[right]:
-                    left += 1
-                else:
-                    right -= 1
-            
-            return max_area
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            isAscending = false;
+        }
+        if (arr[i] < arr[i + 1]) {
+            isDescending = false;
+        }
+    }
+
+    if (isAscending) {
+        return true;
+    } else if (isDescending) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let a = [1, 2, 3, 4, 5, 6];
+console.log(check(a)); // Output will be 'descending' for this example

@@ -14,4 +14,4 @@ let obj2 = {
 
 let binds=fullname.bind(obj,'venjaramoode','klhouse')
 
-binds()
+binds
